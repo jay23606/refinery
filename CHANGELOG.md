@@ -1,5 +1,35 @@
 # Refinery Changelog
 
+## 3.4.4 2026-10-23
+
+This is a patch release carrying a husky update that changes how a malformed OTLP attribute is handled.
+
+### 🛠 Maintenance
+
+- maint(deps): bump husky to v0.45.0 by @MikeGoldsmith in https://github.com/honeycombio/refinery/pull/1883
+
+## 3.4.3 2026-10-23
+
+This is a patch release with one fix.
+
+### 🐛 Fixes
+
+- fix(route): log the cause when an OTLP body fails to parse by @MikeGoldsmith in https://github.com/honeycombio/refinery/pull/1880
+
+## 3.4.2 2026-10-20
+
+This release addresses security vulnerabilities CVE-2026-111943, GO-2026-6612, GO-2026-6603, GO-2026-6611, and GO-2026-6617.
+
+### 🐛 Fixes
+
+- fix: bound allocations sized from msgpack length headers by @MikeGoldsmith in https://github.com/honeycombio/refinery/pull/1868
+- fix: poll for worker health timestamp in TestWorkerHealthReporting by @MikeGoldsmith in https://github.com/honeycombio/refinery/pull/1867
+
+### 🛠 Maintenance
+
+- maint: upgrade to go1.27.3 by @lizthegrey in https://github.com/honeycombio/refinery/pull/1870
+- maint(deps): bump golang.org/x/net to v0.60.0 by @robbkidd in https://github.com/honeycombio/refinery/pull/1871
+
 ## 3.4.1 2026-10-13
 
 This is a patch release with two fixes and a dependency update to address CVEs in `golang.org/x/mod`.
